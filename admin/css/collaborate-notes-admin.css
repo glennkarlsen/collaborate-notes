@@ -1,0 +1,301 @@
+﻿#collaborate-notes-overlay {
+	position: absolute;
+	left: -20px;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: #f1f1f1;
+	background: rgba( 231, 231, 231, 0.9 );
+	z-index: 1001;
+	display: none;
+}
+
+.collaborate-notes {
+	clear: both;
+	display: none;
+	overflow: auto;
+	position: fixed;
+	z-index: 11109;
+	top: 8%;
+	left: 32%;
+	bottom: 8%;
+	background-color: #e7e7e7;
+	padding-top: 5px;
+	-webkit-box-shadow: 0 1px 20px 5px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 1px 20px 5px rgba(0, 0, 0, 0.1);
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.collaborate-notes a {
+	text-decoration: none;
+}
+
+.collaborate-notes .toggle-completed {
+	position: absolute;
+	right: 40px;
+	top: 11px;
+	display: block;
+	z-index: 11110;
+	overflow: hidden;
+	color: green;
+}
+
+.collaborate-notes .alert {
+	background-color: #efefef;
+	border-radius: 0px;
+}
+
+.collaborate-notes .alert h4 {
+	font-size: 1.1em !important;
+	margin: 0 !important;
+}
+
+.collaborate-notes .update-notified {
+	display: none;
+}
+
+.collaborate-notes .selector-box {
+	display: none;
+	width: 100%;
+	background-color: #d2d2d2;
+	padding: 10px;
+	max-width: 97% !important;
+}
+
+.collaborate-notes .selector-box h3 {
+	margin: 0;
+	padding-bottom: 10px;
+}
+
+.collaborate-notes .inside-box-border {
+	border: 1px solid rgba(0,0,0,0.2); 
+	padding: 13px;
+}
+
+.collaborate-notes .reminder-box {
+	display: none;
+	width: 100%;
+	background-color: #d2d2d2;
+	padding: 10px;
+	max-width: 97% !important;
+}
+
+.collaborate-notes .reminder-box h3 {
+	margin: 0;
+	padding-bottom: 10px;
+}
+
+.collaborate-notes .reminder-box .finished-reminder-box {
+	display: none;
+}
+
+.collaborate-notes .reminder-box .reminder-notify {
+	padding: 0 15px;
+	display: none;
+}
+
+.collaborate-notes .reminder-box .reminder-notify .datetime {
+	font-weight: bold;
+}
+
+.collaborate-notes .invalidBorder {
+	border: 1px solid red;
+}
+
+.collaborate-notes .close-button .btn {
+	padding: 0px 5px;
+	border-radius: 0px;
+	background-color: #eee;
+	color: #0074a2;
+	position: absolute;
+}
+
+.collaborate-notes .status-message {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 5px 10px;
+}
+
+.collaborate-notes .notified {
+	display: none;
+}
+
+.collaborate-notes .new-notified {
+	margin-bottom: 10px;
+	display: none;
+}
+
+.collaborate-notes .assigne-users-alert {
+	display: none;
+}
+
+.collaborate-notes .note {
+	background: #fefefe;
+	padding: 15px;
+}
+
+.collaborate-notes .note div {
+  word-wrap: break-word; /*Added property*/
+}
+
+.collaborate-notes .text-right { 
+	text-align: right;
+}
+
+.collaborate-notes .text-center { 
+	text-align: center;
+}
+
+
+.collaborate-notes .note:hover, .note:focus, button  {
+    outline:0px !important;
+    -webkit-appearance:none;
+}
+
+.collaborate-notes .divider {
+	margin: 30px 0;
+}
+
+.collaborate-notes .note-wrapper {
+	-webkit-box-shadow: 0 2px 1px rgba(0,0,0,0.08);
+	box-shadow: 0 2px 1px rgba(0,0,0,0.08);
+	display: block;
+	position: relative;
+}
+
+.collaborate-notes .save-note {
+	display: none;
+	background-color: #d2d2d2;
+	padding: 0px;
+}
+
+.collaborate-notes .save-note .save-note-inner {
+	display: block;
+	background-color: #d2d2d2;
+	padding: 5px;
+}
+
+.collaborate-notes .save-note.first {
+	background-color: #fff;
+}
+
+.collaborate-notes .note-log {
+	background-color: #fefefe;
+	padding: 0 10px 5px 0;
+	color: #999999;
+}
+
+.collaborate-notes .reminder-log {
+	display: none;
+	background-color: #fefefe;
+	padding: 8px 0 10px 15px;
+	font-size: 12px;
+	color: rgba(0,0,0,0.6);
+}
+
+.collaborate-notes .reminder-log a {
+	text-decoration: none;
+	color: rgba(0,0,0,0.6);
+}
+
+.collaborate-notes .reminder-message {
+	font-size: 12px;
+	color: rgba(0,0,0,0.6);
+}
+
+.collaborate-notes .reminder-active {
+	background-color: #d2d2d2;
+}
+
+.collaborate-notes .note[placeholder]:empty:before {
+	color: #888;
+	content: attr(placeholder);
+}
+
+.collaborate-notes .note {
+	font-size: 16px;
+	font-family: Georgia, "Bitstream Charter", serif;
+	color: #444;
+}
+
+.collaborate-notes .editing {
+	display: block;
+}
+
+.collaborate-notes .hideWrapper {
+	display: none;
+}
+
+.collaborate-notes .text-footer {
+	padding: 10px 0;
+}
+
+.collaborate-notes .save-status {
+	font-style: italic;
+	font-size: 12px;
+	position: absolute;
+	right: 40px;
+	top: 10px;
+	color: #999999;
+}
+
+.collaborate-notes .status-section {
+	border-bottom: 0px solid #eee;
+	height: 40px;
+}
+
+.collaborate-notes .status-section .btn {
+	background: transparent;
+	position: absolute;
+	right: -21px;
+	top: -5px;
+	color: #999999;
+	border-radius: 0px;
+	padding-bottom: 6px;
+	height: 45px;
+	width: 45px;
+}
+
+.collaborate-notes .status-section .btn:hover {
+	background: #0074a2;
+	color: #ffffff;
+	opacity: .2;
+}
+
+.collaborate-notes .status-section .btn:hover .dashicons {
+	color: #ffffff;
+}
+
+.collaborate-notes .status-section .dashicons {
+	font-size: 24px;
+	color: #777;
+	font-weight: normal;
+	position: absolute;
+	top: 6px;
+	right: 12px;
+}
+
+.collaborate-notes .divider-border {
+	border-top: 1px solid #d2d2d2;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	height: 3px;
+}
+
+.collaborate-notes .saving-status span {
+	font-size: 13px !important;
+	font-style: italic;
+}
+
+.collaborate-notes .note-saving {
+	display: none;
+}
+
+.collaborate-notes .notified, .collaborate-notes .new-notified  {
+	background: #5d9b0d;
+	color: #ffffff;
+}
