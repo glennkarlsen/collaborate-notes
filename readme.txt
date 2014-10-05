@@ -63,6 +63,9 @@ host and configure them with the plugin.
 
 == Changelog ==
 
+= 1.0.3 =
+* Fixed is_empty typo/bug
+
 = 1.0.2 =
 * Fixed z-index bug for WP 4.0
 

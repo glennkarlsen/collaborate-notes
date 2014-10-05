@@ -3,7 +3,7 @@
  * Plugin Name:       Collaborate Notes
  * Plugin URI:        http://wordpress.org/plugins/collaborate-notes
  * Description:       Easy create and share important notes and tasks. Automatic notifying assigned users through email.
- * Version:           1.0.2
+ * Version:           1.0.3
  * Author:            Glenn Sjöström
  * Author URI:        http://glennsjostrom.com
  * License:           GPL-2.0+
