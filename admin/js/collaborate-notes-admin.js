@@ -319,7 +319,7 @@ CollaborateNotes.Views.CollaborateNotesView = Backbone.View.extend({
 				self.setCurrentFilterActive();
 			}
 
-			if (!assignedUsersEmpty.is_empty) {
+			if (!assignedUsersEmpty) {
 				var note = $('.new-notified:first');
 
 				$(note).fadeIn().delay(4000).queue(function(n) {
