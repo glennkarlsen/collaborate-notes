@@ -5,7 +5,7 @@ Author URI: http://glennsjostrom.com
 Tags: to-do, to do list, to-do list, admin, list, todo, to do, task, notes, collaborate, javascript, html5, backbone, share, simple, ajax
 Requires at least: 3.6
 Tested up to: 4.0
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -64,6 +64,7 @@ host and configure them with the plugin.
 == Changelog ==
 
 = 1.0.3 =
+* Close application with Escape-button
 * Fixed is_empty typo/bug
 
 = 1.0.2 =
