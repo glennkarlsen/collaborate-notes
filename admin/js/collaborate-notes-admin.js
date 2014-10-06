@@ -97,8 +97,9 @@ CollaborateNotes.Views.CollaborateNotesView = Backbone.View.extend({
 		this.updateCount();
 		this.render();
 
-		_.bindAll( this, "onMouseUp" );
+		_.bindAll( this, "onMouseUp", "closeIfEsc" );
 		$('body').bind('mouseup', this.onMouseUp);
+		$(window).bind('keydown', this.closeIfEsc);
 		this.$el.hide().fadeIn("fast").css('display', 'block');
 		this.$el.find('#new-note').focus();
 		this.$el.find('.nav-justified .active').parent().addClass('active');
@@ -420,6 +421,12 @@ CollaborateNotes.Views.CollaborateNotesView = Backbone.View.extend({
 		$('#collaborate-notes-overlay').hide().css('display', 'none');
 		$(document.body).css('overflow', 'auto');
 	},
+
+  closeIfEsc: function(key) {
+    if (key.keyCode == 27) {
+      this.shutDownCollaborateNotes();
+    }
+  },
 
 	toggleAssigneSelector: function() {
 		this.$el.find('#new-note-wrapper .reminder-box').slideUp();
