@@ -9,7 +9,7 @@ class Collaborate_Notes {
 	public function __construct() {
 
 		$this->plugin_slug = 'collaborate-notes-slug';
-		$this->version = '1.0.3';
+		$this->version = '1.0.4';
 
 		$this->load_dependencies();
 		$this->define_admin_hooks();
