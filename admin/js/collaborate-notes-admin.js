@@ -118,7 +118,7 @@ CollaborateNotes.Views.CollaborateNotesView = Backbone.View.extend({
 			//that.$el.find('.reminder-notify .datetime').text(reminderValue);
 			//that.$el.find('.reminder-notify').show();
 		});
-		
+
 		this.$el.find('#new-note-wrapper .timepicker').timepicker({
 			'timeFormat': 'H:i'
 		});
@@ -241,7 +241,7 @@ CollaborateNotes.Views.CollaborateNotesView = Backbone.View.extend({
 		CollaborateNotes.currentFilter = 'completed';
 		CollaborateNotes.isRendered = false;
 		this.$el.find('#notes-list').html('');
-		
+
 		this.render();
 	},
 
@@ -392,7 +392,7 @@ CollaborateNotes.Views.CollaborateNotesView = Backbone.View.extend({
 		// 	container.hide();
 		// }
 
-		if ( ! this.mouseIsInside && !container.is(event.target) && container.has(event.target).length === 0  
+		if ( ! this.mouseIsInside && !container.is(event.target) && container.has(event.target).length === 0
 			&& !container2.is(event.target) && container2.has(event.target).length === 0) {
 
 
@@ -675,7 +675,7 @@ CollaborateNotes.Views.Note = Backbone.View.extend({
 			'action': 'delete_note',
 			'note_id': noteId
 		};
-		
+
 		var that = this;
 
 		$.post(ajaxurl, data, function(response) {
@@ -769,7 +769,7 @@ CollaborateNotes.Views.Note = Backbone.View.extend({
 		this.displayMenu();
 		var noteDescription = this.$el.find('.note').html();
 
-		if ( ! noteDescription.length > 0 ) return; 
+		if ( ! noteDescription.length > 0 ) return;
 
 		var notAllowedKeys = [9,16,18,20,27,91,93,37,38,39,40];
 		if ($.inArray(event.keyCode, notAllowedKeys) > -1)	return;

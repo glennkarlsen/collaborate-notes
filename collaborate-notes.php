@@ -75,7 +75,7 @@ register_uninstall_hook( __FILE__, 'collaborate_notes_uninstall' );
 
 function collaborate_notes_uninstall() {
         global $wpdb;
-        
+
 		$table_name = $wpdb->prefix . 'collaborate_notes';
 		$table_name2 = $wpdb->prefix . 'collaborate_notes_reminders';
 
@@ -133,5 +133,3 @@ add_filter( 'wp_mail_content_type', function($content_type){
 });
 
 add_action( 'send_reminder_event', 'send_reminders', 1 , 2 );
-
-
